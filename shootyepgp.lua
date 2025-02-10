@@ -41,8 +41,9 @@ local partyUnit,raidUnit = {},{}
 local hexColorQuality = {}
 local reserves_blacklist,bids_blacklist = {},{}
 local bidlink = {
-  ["ms"]=L["|cffFF3333|Hshootybid:1:$ML|h[Mainspec/NEED]|h|r"],
-  ["os"]=L["|cff009900|Hshootybid:2:$ML|h[Offspec/GREED]|h|r"]
+  ["ms"]=L["|cffFF3333|Hshootybid:1:$ML|h[Mainspec]|h|r"],
+  ["osnp"]=L["|cff0000FF|Hshootybid:2:$ML|h[Offspec - No Pass]|h|r"],
+  ["osp"]=L["|cff009900|Hshootybid:3:$ML|h[Offspec - Pass]|h|r"]
 }
 local options
 do
@@ -788,7 +789,9 @@ function sepgp:SetItemRef(link, name, button)
     if bid == "1" then
       bid = "+"
     elseif bid == "2" then
-      bid = "-"
+      bid = "- No Pass"
+    elseif bid == "3" then
+      bid = "- Pass"
     else
       bid = nil
     end
@@ -927,11 +930,13 @@ end
 
 function sepgp:bidPrint(link,masterlooter,need,greed,bid)
   local mslink = string.gsub(bidlink["ms"],"$ML",masterlooter)
-  local oslink = string.gsub(bidlink["os"],"$ML",masterlooter)
-  local msg = string.format(L["Click $MS or $OS for %s"],link)
+  local osnplink = string.gsub(bidlink["osnp"],"$ML",masterlooter)
+  local osplink = string.gsub(bidlink["osp"],"$ML",masterlooter)
+  local msg = string.format(L["Click $MS, $OSNP or $OSP for %s"],link)
   if (need and greed) then
     msg = string.gsub(msg,"$MS",mslink)
-    msg = string.gsub(msg,"$OS",oslink)
+    msg = string.gsub(msg,"$OSNP",osnplink)
+    msg = string.gsub(msg,"$OSP",osplink)
   elseif (need) then
     msg = string.gsub(msg,"$MS",mslink)
     msg = string.gsub(msg,L["or $OS "],"")
@@ -940,7 +945,8 @@ function sepgp:bidPrint(link,masterlooter,need,greed,bid)
     msg = string.gsub(msg,L["$MS or "],"")
   elseif (bid) then
     msg = string.gsub(msg,"$MS",mslink)
-    msg = string.gsub(msg,"$OS",oslink)  
+    msg = string.gsub(msg,"$OSNP",osnplink)
+    msg = string.gsub(msg,"$OSP",osplink)
   end
   local _, count = string.gsub(msg,"%$","%$")
   if (count > 0) then return end
