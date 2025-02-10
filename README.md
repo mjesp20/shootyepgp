@@ -1,10 +1,13 @@
-# shootyepgp
+# shootyepgp - Fay's version
 Guild Helper addon for EPGP loot system in WoW (1.12)
 
 ## setup
 shootyepgp requires some modifications to guild permissions for officer notes by the guild leader.  
 
-### Version 3.x (current)
+### Version 3.1 (current)
+- Changed the bid options from "Mainspec/NEED and Offspec/GREED" to "Mainspec, Offspec - No Pass and Offspec - Pass"
+
+### Version 3.x (main)
 - officer notes must be set to visible by all and editable **only** by the EPGP admins (eg. officer rank+)
 - public notes are not in use by the addon
 
@@ -41,5 +44,6 @@ Having the addon makes everything more convenient, but is not mandatory.
 [shootyepgp wiki](https://github.com/Road-block/shootyepgp/wiki)
 
 ## download
+- Fay's Version: Download from [here](https://github.com/mjesp20/shootyepgp/releases/latest)
 - Release version: Download shootyepgp-x.y-11200.zip file from [latest](https://github.com/Road-block/shootyepgp/releases/latest) and extract to AddOns folder.
 - *Alpha version: Download shootyepgp-master.zip from [here](https://github.com/Road-block/shootyepgp/archive/master.zip) extract to AddOns folder and **remove** the -master suffix from the folder so it's just `shootyepgp`.*
