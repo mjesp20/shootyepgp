@@ -79,7 +79,7 @@ Results will print here when done.]],
   -- shootyepgp
   ["{shootyepgp}Type \"+\" if on main, or \"+<YourMainName>\" (without quotes) if on alt within %dsec."] = true,
   ["|cffFF3333|Hshootybid:1:$ML|h[Mainspec]|h|r"] = true,
-  ["|cff0000FF|Hshootybid:2:$ML|h[Offspec - No Pass]|h|r"] = true,
+  ["|cff0099FF|Hshootybid:2:$ML|h[Offspec - No Pass]|h|r"] = true,
   ["|cff009900|Hshootybid:3:$ML|h[Offspec - Pass]|h|r"] = true,
   ["Bids"] = true,
   ["Show Bids Table."] = true,
@@ -285,7 +285,7 @@ L:RegisterTranslations("zhCN", function() return {
   -- shootyepgp
   ["{shootyepgp}Type \"+\" if on main, or \"+<YourMainName>\" (without quotes) if on alt within %dsec."] = "{shootyepgp}使用 \"+\" 如果你在大号上, 或者 \"+<YourMainName>\" (没有引号) 如果在小号 %d秒.",
   ["|cffFF3333|Hshootybid:1:$ML|h[Mainspec]|h|r"] = "|cffFF3333|Hshootybid:1:$ML|h[主天赋/需求]|h|r",
-  ["|cff0000FF|Hshootybid:2:$ML|h[Offspec - No Pass|h|r"] = "|cff0000FF|Hshootybid:2:$ML|h[副天赋/贪婪]|h|r",
+  ["|cff0099FF|Hshootybid:2:$ML|h[Offspec - No Pass|h|r"] = "|cff0099FF|Hshootybid:2:$ML|h[副天赋/贪婪]|h|r",
   ["|cff009900|Hshootybid:3:$ML|h[Offspec - Pass|h|r"] = "|cff009900|Hshootybid:3:$ML|h[副天赋/贪婪]|h|r",
   ["Bids"] = "竞标",
   ["Show Bids Table."] = "显示竞标表.",

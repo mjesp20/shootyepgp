@@ -42,7 +42,7 @@ local hexColorQuality = {}
 local reserves_blacklist,bids_blacklist = {},{}
 local bidlink = {
   ["ms"]=L["|cffFF3333|Hshootybid:1:$ML|h[Mainspec]|h|r"],
-  ["osnp"]=L["|cff0000FF|Hshootybid:2:$ML|h[Offspec - No Pass]|h|r"],
+  ["osnp"]=L["|cff0099FF|Hshootybid:2:$ML|h[Offspec - No Pass]|h|r"],
   ["osp"]=L["|cff009900|Hshootybid:3:$ML|h[Offspec - Pass]|h|r"]
 }
 local options
