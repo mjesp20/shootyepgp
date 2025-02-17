@@ -144,7 +144,8 @@ local prices = {
   [23000] = {136,"T3"}; --Plated Abomination Ribcage
   [23001] = {96,"T3"}; --Eye of Diminution
   [23004] = {48,"T3"}; --Idol of Longevity
-  [23005] = {68,"T3"}; --Totem of Flowing Water
+  [23006] = {4,"T3"}; --Libram of Light
+  [23005] = {4,"T3"}; --Totem of Flowing Water
   [23009] = {72,"T3"}; --Wand of the Whispering Dead
   [23014] = {120,"T3"}; --"Iblis, Blade of the Fallen Seraph"
   [23017] = {48,"T3"}; --Veil of Eclipse
@@ -330,7 +331,7 @@ local prices = {
   [21663] = {136,"T2.5"}; --Robes of the Guardian Saint
   [21664] = {80,"T2.5"}; --Barbed Choker
   [21665] = {72,"T2.5"}; --Mantle of Wicked Revenge
-  [21666] = {88,"T2.5"}; --Sartura's Might
+  [21666] = {60,"T2.5"}; --Sartura's Might
   [21667] = {76,"T2.5"}; --Legplates of Blazing Light
   [21668] = {20,"T2.5"}; --Scaled Leggings of Qiraji Fury
   [21669] = {48,"T2.5"}; --Creeping Vine Helm
@@ -346,7 +347,7 @@ local prices = {
   [21679] = {48,"T2.5"}; --Kalimdor's Revenge
   [21680] = {56,"T2.5"}; --Vest of Swift Execution
   [21681] = {64,"T2.5"}; --Ring of the Devoured
-  [21682] = {4,"T2.5"}; --Bile-Covered Gauntlets
+  [21682] = {70,"T1.5"}; --Bile-Covered Gauntlets
   [21683] = {68,"T2.5"}; --Mantle of the Desert Crusade
   [21684] = {4,"T2.5"}; --Mantle of the Desert's Fury
   [21685] = {4,"T2.5"}; --Petrified Scarab
@@ -394,6 +395,45 @@ local prices = {
   [23557] = {128,"T2.5"}; --Larvae of the Great Worm
   [23558] = {24,"T2.5"}; --The Burrower's Shell
   [23570] = {80,"T2.5"}; --Jom Gabbar
+  [21612] = {50,"T1.5"}; --Wormscale Stompers 
+  [21613] = {50,"T1.5"}; --Wormhide Boots 
+  [60003] = {180,"T2.5"}; --Remnants of an Old God
+  [41077] = {160,"T2.5"}; --Yshgo'lar, Cowl of Fanatical Devotion
+    ---Ouro loot, patch 1.17.2---
+  [21614] = {4,"T2.5"}; --Wormhide Protector
+  [55554] = {116,"T2.5"}; --Carapace Handguards
+  [55553] = {116,"T2.5"}; --Gloves of the Primordial Burrower
+
+    -----------------------
+    --- Emerald Sanctum ---
+    -----------------------
+  [61652] = {52,"T2"}; --Claw of Erennius              +234GP
+  [61206] = {40,"T2"}; --Robe of the Dreamways         +180GP
+  [61211] = {42,"T2"}; --Sandals of Lucidity           +189GP
+  [61213] = {52,"T2"}; --Talonwind Gauntlets           +234GP
+  [61239] = {82,"T2"}; --Ancient Jade Leggings         +369GP
+  [61212] = {62,"T2"}; --Sanctum Bark Wraps            +279GP
+  [61214] = {82,"T2"}; --Mantle of the Wakener         +369GP
+  [61207] = {40,"T2"}; --Jadestone Helmet              +180GP
+  [61237] = {42,"T2"}; --Mallet of the Awakening       +189GP
+  [61238] = {28,"T2"}; --Scaleshield of Emerald Flight +126GP
+  [61448] = {82,"T2"}; --Axe of Dormant Slumber        +369GP
+  [61208] = {59,"T2"}; --Staff of the Dreamer          +265GP
+  [61205] = {54,"T2"}; --Ring of Nature's Duality      +243GP
+  [61209] = {81,"T2"}; --Shard of Nightmare            +364GP
+  [61210] = {38,"T2"}; --Veil of Nightmare             +171GP
+  [61455] = {5,"T2"}; --Idol of the Emerald Rot        +22GP
+  [61203] = {5,"T2"}; --Libram of the Dreamguard       +22GP
+  [61204] = {5,"T2"}; --Totem of the Stonebreaker      +22GP
+  [61215] = {64,"T2"}; --Head of Solnius               +288GP
+  [61524] = {90,"T2"}; --Naturecaller's Tunic          +405GP
+  [61522] = {80,"T2"}; --Choker of the Emerald Lord    +360GP
+  [61527] = {81,"T2"}; --Breath of Solnius             +364GP
+  [61523] = {92,"T2"}; --Crystal Sword of the Blossom  +414GP
+  [61525] = {80,"T2"}; --Nature's Call                 +360GP
+  [61526] = {76,"T2"}; --Jadestone Protector           +342GP
+  [41076] = {36,"T2"}; --Aspect of Seradane
+
 
     ----------------------
     --- Blackwing Lair ---
