@@ -347,7 +347,7 @@ local prices = {
   [21679] = {48,"T2.5"}; --Kalimdor's Revenge
   [21680] = {56,"T2.5"}; --Vest of Swift Execution
   [21681] = {64,"T2.5"}; --Ring of the Devoured
-  [21682] = {60,"T2.5"}; --Bile-Covered Gauntlets
+  [21682] = {70,"T1.5"}; --Bile-Covered Gauntlets
   [21683] = {68,"T2.5"}; --Mantle of the Desert Crusade
   [21684] = {4,"T2.5"}; --Mantle of the Desert's Fury
   [21685] = {4,"T2.5"}; --Petrified Scarab
@@ -395,14 +395,14 @@ local prices = {
   [23557] = {128,"T2.5"}; --Larvae of the Great Worm
   [23558] = {24,"T2.5"}; --The Burrower's Shell
   [23570] = {80,"T2.5"}; --Jom Gabbar
-  [21612] = {48,"T2.5"}; --Wormscale Stompers 
-  [21613] = {88,"T2.5"}; --Wormhide Boots 
-  [60003] = {152,"T2.5"}; --Remnants of an Old God
-  [41077] = {124,"T2.5"}; --Yshgo'lar, Cowl of Fanatical Devotion
+  [21612] = {50,"T1.5"}; --Wormscale Stompers 
+  [21613] = {50,"T1.5"}; --Wormhide Boots 
+  [60003] = {180,"T2.5"}; --Remnants of an Old God
+  [41077] = {160,"T2.5"}; --Yshgo'lar, Cowl of Fanatical Devotion
     ---Ouro loot, patch 1.17.2---
   [21614] = {4,"T2.5"}; --Wormhide Protector
-  [55554] = {80,"T2.5"}; --Carapace Handguards
-  [55553] = {80,"T2.5"}; --Gloves of the Primordial Burrower
+  [55554] = {116,"T2.5"}; --Carapace Handguards
+  [55553] = {116,"T2.5"}; --Gloves of the Primordial Burrower
 
     -----------------------
     --- Emerald Sanctum ---
