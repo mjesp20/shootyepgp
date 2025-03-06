@@ -1843,7 +1843,8 @@ function sepgp:captureBid(text, sender)
               end
             end
 						bids_blacklist[sender] = true
-						table.insert(sepgp.bids,{name,class,rank,spec,rank_idx,ep,(ep/gp),main_name})
+						--table.insert(sepgp.bids,{name,class,rank,spec,rank_idx,ep,(ep/gp),main_name})
+            table.insert(sepgp.bids,{name,class,rank,spec,rank_idx,ep,(ep/gp),ep,main_name})
             sepgp_bids:Toggle(true)
             return
           end

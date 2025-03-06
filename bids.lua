@@ -208,18 +208,21 @@ function sepgp_bids:OnTooltipUpdate()
       "text2", C:Orange("MS/OS"),     "child_text2R",   1, "child_text2G",   1, "child_text2B",   1, "child_justify2", "RIGHT",
       "text3", C:Orange("Rank"),     "child_text3R",   1, "child_text3G",   1, "child_text3B",   1, "child_justify3", "RIGHT",
       "text4", C:Orange("pr"),     "child_text4R",   1, "child_text4G",   1, "child_text4B",   0, "child_justify4", "RIGHT",
-      "text5", C:Orange("Main"),     "child_text5R",   1, "child_text5G",   1, "child_text5B",   0, "child_justify5", "RIGHT",      
+      "text5", C:Orange("EP"),     "child_text5R",   1, "child_text5G",   1, "child_text5B",   0, "child_justify5", "RIGHT",      
       "hideBlankLine", true
     )
   table.sort(sepgp.bids, pr_sorter_bids)
   for i = 1, table.getn(sepgp.bids) do
     local name, class, rank, spec, r_idx, ep, pr, main = unpack(sepgp.bids[i])
     local namedesc
+    namedesc = C:Colorize(BC:GetHexColor(class), name)
+    --[[ old, added alt to name with my change 
     if (main) then
       namedesc = string.format("%s(%s)", C:Colorize(BC:GetHexColor(class), name), L["Alt"])
     else
       namedesc = C:Colorize(BC:GetHexColor(class), name)
     end
+    --]]
     local text2, text4
     if sepgp_minep > 0 and ep < sepgp_minep then
       text4 = C:Red(string.format("%.4g", pr))
