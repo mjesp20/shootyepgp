@@ -207,8 +207,8 @@ function sepgp_bids:OnTooltipUpdate()
       "text",  C:Orange("Name"),   "child_textR",    1, "child_textG",    1, "child_textB",    1, "child_justify",  "LEFT",
       "text2", C:Orange("MS/OS"),     "child_text2R",   1, "child_text2G",   1, "child_text2B",   1, "child_justify2", "RIGHT",
       "text3", C:Orange("Rank"),     "child_text3R",   1, "child_text3G",   1, "child_text3B",   1, "child_justify3", "RIGHT",
-      "text4", C:Orange("pr"),     "child_text4R",   1, "child_text4G",   1, "child_text4B",   0, "child_justify4", "RIGHT",
-      "text5", C:Orange("EP"),     "child_text5R",   1, "child_text5G",   1, "child_text5B",   0, "child_justify5", "RIGHT",      
+      "text4", C:Orange("EP"),     "child_text4R",   1, "child_text4G",   1, "child_text4B",   0, "child_justify4", "RIGHT",
+      "text5", C:Orange("pr"),     "child_text5R",   1, "child_text5G",   1, "child_text5B",   0, "child_justify5", "RIGHT",      
       "hideBlankLine", true
     )
   table.sort(sepgp.bids, pr_sorter_bids)
@@ -233,8 +233,8 @@ function sepgp_bids:OnTooltipUpdate()
       "text", namedesc,
       "text2", spec,
       "text3", rank,
-      "text4", text4,
-      "text5", (main or ""),
+      "text4", ep,
+      "text5", text4,
       "func", "on_bid_clicked", "arg1", self, "arg2", sepgp.bids[i]
     )
   end
