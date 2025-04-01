@@ -1033,6 +1033,8 @@ function sepgp:addonComms(prefix,message,channel,sender)
       msg = string.format(L["%d EP awarded to Raid."],amount)
     elseif who == "RESERVES" and what == "AWARD" then
       msg = string.format(L["%d EP awarded to Reserves."],amount)
+      -- we dont care about roadblocks version
+      /*
     elseif who == "VERSION" then
       local out_of_date, version_type = self:parseVersion(self._versionString,what)
       if (out_of_date) and self._newVersionNotification == nil then
@@ -1043,6 +1045,7 @@ function sepgp:addonComms(prefix,message,channel,sender)
       if (IsGuildLeader()) then
         self:shareSettings()
       end
+      */
     elseif who == "SETTINGS" then
       for progress,discount,decay,minep,alts,altspct in string.gfind(what, "([^:]+):([^:]+):([^:]+):([^:]+):([^:]+):([^:]+)") do
         discount = tonumber(discount)
