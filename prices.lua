@@ -403,6 +403,7 @@ local prices = {
   [21614] = {4,"T2.5"}; --Wormhide Protector
   [55554] = {116,"T2.5"}; --Carapace Handguards
   [55553] = {116,"T2.5"}; --Gloves of the Primordial Burrower
+  [55555] = {116,"T2.5"};
 
     -----------------------
     --- Emerald Sanctum ---
